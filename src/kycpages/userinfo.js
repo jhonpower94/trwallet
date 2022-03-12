@@ -88,7 +88,7 @@ function UserProfile() {
             Email address
           </InputLabel>
           <BootstrapInput
-            defaultValue=""
+            defaultValue={values.email}
             placeholder="you@example.com"
             id="email-input"
             name="email"
@@ -169,7 +169,7 @@ function UserProfile() {
             name="zip"
             fullWidth
             onChange={handleChange}
-            required
+            
           />
         </Stack>
       </div>

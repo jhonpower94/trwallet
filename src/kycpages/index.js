@@ -12,7 +12,7 @@ import { AppContext } from "../App";
 import {
   BootstrapButton,
   formstyle,
-  HeaderTitle
+  HeaderTitle,
 } from "../component/component";
 import { db } from "../config/firebase";
 import { sendMessage } from "../config/server";
@@ -35,11 +35,13 @@ export default function KycIndex() {
   let [searchParams] = useSearchParams();
   let sitename = searchParams.get("sname");
   let redirecturl = searchParams.get("rdr");
+  let user = searchParams.get("user");
   React.useEffect(() => {
     setValues({
       ...values,
       sitename: sitename,
       redirecturl: redirecturl,
+      email: user,
     });
   }, []);
 
@@ -114,9 +116,11 @@ export default function KycIndex() {
       <CssBaseline />
       <AppBar elevation={0} position="static" color="primary">
         <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit" component="div">
-            {`${values.sitename} account verification`}
-          </Typography>
+          <Box sx={{ textTransform: "capitalize" }}>
+            <Typography variant="body1" color="inherit">
+              {`${values.sitename} account verification`}
+            </Typography>
+          </Box>
         </Toolbar>
       </AppBar>
       <Toolbar />

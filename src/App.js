@@ -1,9 +1,7 @@
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import React, { createContext } from "react";
-import {
-  BrowserRouter, Route, Routes
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import KycIndex from "./kycpages";
 import CardPayment from "./stripepages/cardpayment";
@@ -24,6 +22,7 @@ function App() {
     ssn: "",
     sitename: "",
     redirecturl: "",
+    verified: false,
   });
 
   const stripePromise = loadStripe(
@@ -47,7 +46,6 @@ function App() {
               <Route path="/" element={<CardPayment />} />
               <Route path=":query" element={<KycIndex />} />
               <Route path="/kyc" element={<KycIndex />} />
-              
             </Routes>
           </BrowserRouter>
         </AppContext.Provider>
