@@ -4,7 +4,7 @@ import {
   useElements,
   PaymentElement,
 } from "@stripe/react-stripe-js";
-import { BootstrapButton } from "./component";
+import { BootstrapButton } from "../component/component";
 import { Box } from "@mui/system";
 
 const SetupForm = () => {
@@ -28,7 +28,7 @@ const SetupForm = () => {
       //`Elements` instance that was used to create the Payment Element
       elements,
       confirmParams: {
-        return_url: `${window.location.hostname}/status`,
+        return_url: `https://${window.location.hostname}/status`,
       },
     });
 

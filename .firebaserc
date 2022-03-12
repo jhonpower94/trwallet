@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "scrapedsite"
+  },
+  "targets": {
+    "scrapedsite": {
+      "hosting": {
+        "payment": [
+          "paymentstripe"
+        ]
+      }
+    }
   }
 }

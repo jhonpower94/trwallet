@@ -1,0 +1,1 @@
+https://a412-105-112-114-44.ngrok.io/status?setup_intent=seti_1KbabsBJfVrVZyoUX84H31Hl&setup_intent_client_secret=seti_1KbabsBJfVrVZyoUX84H31Hl_secret_LIAxPXvQXK08AUdkym9yu2IC8XhfV1Y&redirect_status=succeeded
