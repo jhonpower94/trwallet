@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "payment",
+      "target": "dhl",
       "public": "build",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [

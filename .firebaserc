@@ -10,6 +10,9 @@
         ],
         "kyc": [
           "kycverify"
+        ],
+        "dhl": [
+          "expressdelivery"
         ]
       }
     }
