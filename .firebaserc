@@ -12,7 +12,7 @@
           "kycverify"
         ],
         "dhl": [
-          "expressdelivery"
+          "expressdhl"
         ]
       }
     }
