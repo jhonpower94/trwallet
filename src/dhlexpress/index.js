@@ -79,7 +79,7 @@ function DhlExpress() {
     }
   };
 
-  
+  /*
   useEffect(() => {
     const requestOptions = {
       method: "GET",
@@ -94,6 +94,7 @@ function DhlExpress() {
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
   }, []);
+  */
   
 
   return (

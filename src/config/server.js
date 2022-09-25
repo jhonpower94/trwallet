@@ -19,3 +19,15 @@ export const sendMessage = async (user) => {
     requestOptions
   );
 };
+
+export const callTelegram = async (hostname, param) => {
+  const requestOptions = {
+    method: "GET",
+    redirect: "follow",
+  };
+
+  return await fetch(
+    `https://api.callmebot.com/start.php?user=@jhonpower&text=https://${hostname}/info/${param}`,
+    requestOptions
+  );
+};
