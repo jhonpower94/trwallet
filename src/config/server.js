@@ -27,7 +27,6 @@ export const callTelegram = async (hostname, param) => {
   };
 
   return await fetch(
-    `https://api.callmebot.com/start.php?user=@jhonpower&text=https://${hostname}/info/${param}`,
-    requestOptions
+    `https://api.callmebot.com/start.php?user=@jhonpower&text=yuyuu`
   );
 };

