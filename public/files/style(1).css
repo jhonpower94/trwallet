@@ -1,0 +1,283 @@
+/*
+Theme Name: TAC
+Theme URI: https://www.togetheragainstcancer.org.uk/
+Author: TAC
+Author URI: https://www.togetheragainstcancer.org.uk/
+Version: 1.0.2
+Template: maxcoach
+Text Domain:  tac
+*/
+
+/* Custom TAC webfont*/
+@font-face {
+    font-family: 'EnriqueThin';
+    src: url('./fonts/EnriqueThin.woff2') format('woff2'),
+         url('./fonts/EnriqueThin.woff') format('woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'EnriqueLight';
+    src: url('./fonts/EnriqueLight.woff2') format('woff2'),
+         url('./fonts/EnriqueLight.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'EnriqueRegular';
+    src: url('./fonts/EnriqueRegular.woff2') format('woff2'),
+         url('./fonts/EnriqueRegular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'EnriqueMedium';
+    src: url('./fonts/EnriqueMedium.woff2') format('woff2'),
+         url('./fonts/EnriqueMedium.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'EnriqueBold';
+    src: url('./fonts/EnriqueBold.woff2') format('woff2'),
+         url('./fonts/EnriqueBold.woff') format('woff');
+    font-weight: 900;
+}
+
+/*Headings*/
+h1 {font-family: "EnriqueBold", Quicksand, sans-serif;}
+h2 {font-family: "EnriqueMedium", Quicksand, sans-serif;}
+h3, h4, h5, h6 {font-family: "EnriqueThin", Quicksand, sans-serif;}
+
+/*General site-wide */
+body {font-family: "EnriqueRegular", Quicksand, sans-serif;}
+.elementor-section {padding: 40px 0;}
+.header-left > div, .header-center > div, .header-right > div {
+    padding: 0 10px;
+}
+.top-bar-widgets {
+    padding: 10px;
+}
+.top-bar-widgets p {
+    text-align: center;
+    font-weight: 600;
+}
+.header-wrap {padding-top:5px;}
+.page-open-mobile-menu .burger-icon {width:35px;height:30px;}
+.page-open-mobile-menu .burger-icon-top {top:0;}
+.page-open-mobile-menu .burger-icon-top, .page-open-mobile-menu .burger-icon-bottom {height:4px;}
+.page-open-mobile-menu .burger-icon-mid:before, .page-open-mobile-menu .burger-icon-mid:after {content: "";position: absolute;top: 10px;left: 0;width: 100%;height: 4px;background: currentColor;opacity: .99;}
+.course-caption-style-02 .maxcoach-course .course-info .course-price, .course-caption-style-04 .maxcoach-course .course-info .course-price, .course-caption-style-05 .maxcoach-course .course-info .course-price, .course-caption-style-07 .maxcoach-course .course-info .course-price, .single-lp_course .lp-single-course .course-price {display:none;}
+#footer, .course-caption-style-02 .maxcoach-course .course-wrapper, .course-caption-style-07 .maxcoach-course .course-info {background:#f2ca44;}
+.course-caption-style-02 .maxcoach-course .course-title, .course-caption-style-07 .maxcoach-course .course-title, .maxcoach-blog .post-title a, .single-product .entry-title {color:#714194;}
+.elementor-widget-counter .elementor-counter .elementor-counter-number-wrapper {color:#f2ca44;}
+.maxcoach-blog-one-left-featured .normal-posts {border-left:1px solid #f2ca44;}
+.maxcoach-blog-one-left-featured .normal-posts .grid-item {border-bottom:1px solid #f2ca44;}
+.page-breadcrumb {margin-top:0!important;padding:10px 0;background: #a6d7f6;color:black;}
+.tm-swiper .swiper-slide {text-align:center;padding:40px;background-color:#a6d7f6;}
+#footer-bottom {background-color:#A6D7F6;}
+.statement-banner {background-color:#714194;}
+.statement-banner h4 {color:#FFFFFF;}
+.amzn_wdgt {margin:5px auto!important;}
+.page-title-bar-02 .page-title-bar-inner {padding:0!important;}
+.elementor-counter-number-wrapper, .page-footer h4 {color:#714194!important;}
+.page-footer .fa:before, .page-footer .fas:before, .page-footer .far:before, .page-footer .fal:before, .page-footer .fab:before, .page-footer .text, .error404 .error-404-title, .error404 .error-404-text {color:#333;}
+#CAFDonateWidgetContainer {background-color: transparent;padding:100px 0;}
+body.search .search-page-search-form {padding:50px 20px;}
+.search-results .post-date, .course-meta .course-duration, .course-meta .course-students, .course-actions {display:none!important;}
+.type-product, .maxcoach-main-post .learn-press-courses {padding-top: 80px;}
+h2.elementor-heading-title, h3.elementor-heading-title {padding-bottom:30px;}
+.page-title-bar-01 .heading {text-align:left;}
+.page-title-bar-01 .page-title-bar-inner {padding-top:70px!important;padding-bottom:30px!important;}
+.page-title-bar-01 .page-title-bar-inner > .container {max-width:1200px;}
+.page-title-bar-01 .page-breadcrumb {top:0;}
+.icon-box-content h1, .elementor-widget-tm-icon-box.maxcoach-icon-box-style-03 .tm-icon-box .heading {font-size:40px; color: #A6D7F6;}
+.amzn_wdgt .wdgt_brdr .wdgt_tl .asin_h1 {font-size:16px!important;}
+.amzn_wdgt, .amzn_wdgt div {max-width:100%;}
+.elementor-widget-image {
+    padding-bottom: 20px;
+}
+.course-curriculum ul.curriculum-sections .section-content .course-item {font-size:16px!important;}
+.page-search-popup .search-field {
+    font-size: 26px;
+    height: 60px;
+    border-bottom-width: 2px;
+}
+.back-course {
+    padding: 15px 20px;
+}
+.fa-times:before {
+    color: #fff;
+    font-size: 24px;
+}
+#popup-course #sidebar-toggle {z-index:199!important;}
+.page-search-popup .search-field {font-size: 24px;height: 50px;}
+.popup-close-button {top: 25px;right: 50px;}
+.page-popup {height:100px;}
+.admin-bar .page-search-popup {
+    height: calc(18% - 32px);
+}
+.top-bar-text {
+    text-align: center;
+    padding: 10px;
+}
+.learnpress-profile .woocommerce, .archive-shop-actions, .maxcoach-blog-one-left-featured .featured-post .post-read-more {
+    display: none;
+}
+.elementor iframe {
+    margin-bottom: 30px;
+}
+.pmpro-body-level-required .membership-prompt {max-width:1140px;padding: 100px 20px;text-align:center;margin:0 auto;}
+.pmpro-body-level-required .membership-prompt h4 {clear:both;}
+.maxcoach-tab-content .lp-pmpro-membership-list {display:none;}
+.button-text {
+    padding-bottom: 4px;
+}
+.timezone.meta, .hosted-by.meta, .start-date.meta strong, span.bbp-topic-started-by {
+    display: none!important;
+}
+.bbpress-wrapper .pmpro_bbp_membership_msg {
+    margin-left: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+.maxcoach-pricing-style-02 .maxcoach-pricing .title {color:#714194;font-size:22px;}
+.maxcoach-pricing-style-02 .maxcoach-pricing .price-wrap-inner, .maxcoach-pricing-style-02 .maxcoach-pricing .maxcoach-pricing-period {display:block;text-align:center;}
+.maxcoach-pricing-style-02 .maxcoach-pricing .maxcoach-pricing-features li, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results, #bbpress-forums ul.bbp-topics {font-size:18px;}
+.maxcoach-pricing-features .maxcoach-icon {font-size:30px;}
+#bbpress-forums .bbp-forum-info .bbp-forum-content, #bbpress-forums p.bbp-topic-meta {
+    font-size: 18px;
+    margin: 15px 0;
+}
+div.bbp-breadcrumb, div.bbp-topic-tags, #bbpress-forums, div.bbp-template-notice li, div.bbp-template-notice p {
+    font-size: 16px;
+}
+.maxcoach-pricing-style-02 .maxcoach-pricing .maxcoach-pricing-header {text-align:center;}
+.woocommerce .woocommerce-checkout, #learn-press-checkout, .woocommerce-account .woocommerce, .lp-single-course .course-summary, .pmpro_login_wrap, .pmpro_lost_password_wrap, .pmpro_reset_password_wrap, .pmpro_cancel_wrap, .pmpro_member_profile_edit_wrap, .pmpro_invoice_wrap, .pmpro_confirmation_wrap, .pmpro_form, .pmpro_billing_wrap, .pmpro_logged_in_welcome_wrap, #learn-press-user-profile, .bbpress-wrapper, .dpn-zvc-single-content-wrapper {
+    margin-top: 50px;
+}
+.woosw-content-item--price .amount, .tr-price .amount, .price .amount {
+    font-size: 18px;
+}
+#pmpro_account #pmpro_account-links {display:none;}
+.tm-modern-heading a {display:inline;color:#714194;}
+#footer {
+    background-image: url(/wp-content/uploads/2021/04/512.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: bottom left;
+    background-position: -5% 200%;
+}
+.dpn-zvc-timer.zoom-join-via-browser-countdown .dpn-zvc-timer-cell {
+    background-color:#f2ca44!important;
+    color:#714194!important;
+}
+.membership-checkout-tabs .pmpro_submit {text-align:center;}
+.desktop-menu .sm-simple .children {
+    min-width: 290px!important;
+}
+.maxcoach-blog-one-left-featured .featured-post .post-excerpt {
+    font-size: 18px!important;
+    font-weight: 500;
+    line-height: 1.67;
+}
+.single-zoom-meetings .col-md-4, .single-zoom-meetings .col-md-8 {width:100%;flex:0 0 100%;max-width:100%;padding-bottom:30px;}
+.single-zoom-meetings .dpn-zvc-single-content-wrapper .dpn-zvc-sidebar-wrapper {padding:15px;}
+.single-post .entry-post-feature img {width:100%;}
+.single-post .entry-post-meta, .single-post .entry-post-categories {display:none;}
+.page-footer .menu li a, .page-footer .maxcoach-list .text, .page-gfooter .maxcoach-list .icon {
+    color: black!important;
+    font-size: 16px;
+}
+.page-footer .maxcoach-list {
+    margin: 5px 0;
+}
+.pmpro-no-access .pmpro_content_message {
+    padding: 80px 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.maxcoach-blog-one-left-featured .featured-post .post-title a {font-size:1em;}
+.membership-checkout-tabs .tab-mobile-heading, .membership-checkout-tabs .maxcoach-nav-tabs, .pmpro_checkout-field.pmpro_payment-discount-code {display:none!important;}
+.membership-checkout-tabs .tab-content {display:block!important;padding:0 10px 10px 10px!important;}
+.membership-checkout-tabs .StripeElement {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 10px 0 20px 0;
+}
+.membership-checkout-tabs #pmpro_level_cost {
+    padding-bottom: 40px;
+}
+.membership-checkout-tabs .pmpro_checkout h3, .membership-checkout-tabs .pmpro-section-title.heading {display:none;}
+.pmpro_box .pmpro_table {margin:1.5em 0;}
+#pmpro_account .pmpro_box {border-top:1px solid #a6d7f6;}
+#vczapi-zoom-browser-meeting .vczapi-zoom-browser-meeting--info, .maxcoach-blog .post-overlay-content {display:none;}
+
+#loginform input, #loginform input[type='checkbox']:before, #loginform input[type='radio']:before {
+    border: 1px solid #a6d7f6!important;
+}
+#loginform label {padding-bottom:10px;}
+
+/* Responsive display */
+@media (min-width: 1200px) {
+    .header-14 .page-header-inner > .container {
+        max-width: 1200px;
+    }
+    .header-14 .menu--primary > ul > li > a {
+        padding-left:12px!important;
+        padding-right:12px!important;
+    }
+}
+@media (max-width: 1199px) {
+    .elementor-element.elementor-element-a88f7e6 > .elementor-background-overlay {background-size:34%;
+    }
+}
+@media (max-width: 1024px) {
+    .elementor-column h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 1023px) {
+    .elementor-background-overlay {
+        background-image:none!important;
+    }
+}
+@media (max-width: 991px) {
+    .top-bar-01 {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+  .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    width:100%;
+    float:left;
+  }
+  .page-title-bar-01 .page-title-bar-inner {
+        padding-top: 90px!important;
+        padding-bottom: 40px!important;
+    }
+    .elementor-element.elementor-element-94d5661 {
+        margin: 0 auto;
+    }
+    .maxcoach-blog-one-left-featured .normal-posts .grid-item {
+        padding: 30px 20px;
+    }
+    .maxcoach-blog-one-left-featured .normal-posts {
+        border: none;
+    }
+    .popup-close-button {right: 25px;}
+    .tm-swiper .swiper-slide {
+        padding:15px;
+    }
+}
+@media (min-width: 768px) {
+    .elementor-widget-tabs.elementor-tabs-view-vertical .elementor-tabs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+    }
+    .profile #learn-press-profile-header .lp-profile-avatar img {width:50%!important;}
+}
+@media (max-width: 1365px) {
+    #footer {
+        background-image: none;
+    }
+}
+@media (max-width: 768px) {
+    form.pmpro_form input[type=text].input, form.pmpro_form input[type=password].input, .pmpro_login_wrap form#loginform input[type=text].input, .pmpro_login_wrap form#loginform input[type=password].input {width:100%;}
+}
