@@ -199,7 +199,7 @@ function TogetherWithCancer() {
                                           <div className="tm-modern-heading">
                                             <div className="heading-secondary-wrap">
                                               <h4 className="heading-secondary elementor-heading-title">
-                                                Welcome to T.A.C. Medicine
+                                                Welcome to TOPPERS Medicine
                                               </h4>
                                             </div>
                                             <div className="heading-primary-wrap">
@@ -215,9 +215,7 @@ function TogetherWithCancer() {
                                               <div className="heading-description">
                                                 <p>
                                                   <strong>
-                                                    <strong>T</strong>ogether
-                                                    <strong>A</strong>gainst
-                                                    <strong>C</strong>ancer is
+                                                    <strong>T</strong>oppers is
                                                     committed to helping people
                                                     diagnosed with cancer. We
                                                     equip patients and carers
@@ -763,11 +761,7 @@ function TogetherWithCancer() {
                                                           <div className="post-excerpt">
                                                             <p>
                                                               <strong>T</strong>
-                                                              ogether
-                                                              <strong>A</strong>
-                                                              gainst
-                                                              <strong>C</strong>
-                                                              ancer is turning 6
+                                                              oppers is turning 6
                                                               years old! We’re
                                                               so excited to
                                                               announce our 6th
@@ -892,7 +886,7 @@ function TogetherWithCancer() {
                                             <div className="tm-modern-heading">
                                               <div className="heading-primary-wrap">
                                                 <h4 className="heading-primary elementor-heading-title">
-                                                  T.A.C. Wellness Centre
+                                                  TOPPERS Wellness Centre
                                                 </h4>
                                               </div>
                                             </div>

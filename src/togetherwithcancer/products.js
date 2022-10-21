@@ -44,7 +44,7 @@ function Products() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" variant="contained" onClick={()=>{
+                <Button size="small" fullWidth variant="contained" onClick={()=>{
                     window.open(
                         "https://tawk.to/chat/6352ec70daff0e1306d3446e/1gftun61r",
                         "_blank"

@@ -1,9 +1,9 @@
 {
-  "short_name": "Shipment",
-  "name": "Express delivery service",
+  "short_name": "Toppers",
+  "name": "Toppers",
   
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#f90"
+  "theme_color": "#fff",
+  "background_color": "#714194"
 }
