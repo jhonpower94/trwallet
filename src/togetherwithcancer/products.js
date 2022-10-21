@@ -44,8 +44,13 @@ function Products() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small" variant="contained" onClick={()=>{
+                    window.open(
+                        "https://tawk.to/chat/6352ec70daff0e1306d3446e/1gftun61r",
+                        "_blank"
+                      );
+                }}>Order now</Button>
+                
               </CardActions>
             </Card>
           </Grid>
