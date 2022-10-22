@@ -15,42 +15,47 @@ function Products() {
       <Grid container spacing={3}>
         {[
           {
-            title: "Bitter kola",
-            image: require("./bitterkola.jpeg"),
-            discription:
-              "This is medication for centuries in folk medicine to treat cancer, its a species of flowering plant belonging to the Mangosteen genus Garcinia of the family Clusiaceae",
+            image: require("./productimages/bitterkola.jpeg"),
           },
           {
-            title: "Kola nut",
-            image: require("./kolanut.webp"),
-            discription:
-              "The kola nut is a very high medication for batteling cancer which is a caffeine-containing nut of evergreen trees of the genus Cola, primarily of the species Cola acuminata and Cola nitida.",
+            image: require("./productimages/scale.jpg"),
+          },
+          {
+            image: require("./productimages/bags.jpg"),
+          },
+          {
+            image: require("./productimages/cans.jpg"),
+          },
+          {
+            image: require("./productimages/images.jpg"),
+          },
+          {
+            image: require("./productimages/download.jpg"),
           },
         ].map((item, index) => (
           <Grid item xs={12} sm={6} key={index}>
-            <Card variant="outlined" sx={{height: "100%"}}>
+            <Card variant="outlined" >
               <CardMedia
                 component="img"
-                sx={{ height: "200px" }}
+                
                 image={item.image}
                 alt="green iguana"
               />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {item.title}
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  {item.discription}
-                </Typography>
-              </CardContent>
+
               <CardActions>
-                <Button size="small" fullWidth variant="contained" onClick={()=>{
+                <Button
+                  size="small"
+                  fullWidth
+                  variant="contained"
+                  onClick={() => {
                     window.open(
-                        "https://tawk.to/chat/6352ec70daff0e1306d3446e/1gftun61r",
-                        "_blank"
-                      );
-                }}>Order now</Button>
-                
+                      "https://tawk.to/chat/6352ec70daff0e1306d3446e/1gftun61r",
+                      "_blank"
+                    );
+                  }}
+                >
+                  Order now
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -61,3 +66,14 @@ function Products() {
 }
 
 export default Products;
+
+/*
+ <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {item.title}
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  {item.discription}
+                </Typography>
+              </CardContent>
+              */

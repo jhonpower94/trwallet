@@ -384,8 +384,21 @@ function TogetherWithCancer() {
                                           <div className="tm-modern-heading">
                                             <div className="heading-primary-wrap">
                                               <h2 className="heading-primary elementor-heading-title">
-                                                Our <mark>Products</mark>
+                                                Our <mark>Product</mark>
                                               </h2>
+                                              <div>
+                                                <h2>
+                                                  <mark>Bitter kola</mark>
+                                                </h2>
+                                                <h4 className="elementor-size-default">
+                                                  This medication for centuries
+                                                  in folk medicine to treat
+                                                  cancer, its a species of
+                                                  flowering plant belonging to
+                                                  the Mangosteen genus Garcinia
+                                                  of the family Clusiaceae.
+                                                </h4>
+                                              </div>
                                             </div>
                                           </div>
                                         </div>
@@ -761,8 +774,8 @@ function TogetherWithCancer() {
                                                           <div className="post-excerpt">
                                                             <p>
                                                               <strong>T</strong>
-                                                              oppers is turning 6
-                                                              years old! We’re
+                                                              oppers is turning
+                                                              6 years old! We’re
                                                               so excited to
                                                               announce our 6th
                                                               anniversary Open
@@ -1087,7 +1100,16 @@ function TogetherWithCancer() {
                 "https://tawk.to/chat/6352ec70daff0e1306d3446e/1gftun61r";
             }}
           />
-          <SpeedDialAction icon={<TelegramIcon />} tooltipTitle="Livechat" />
+          <SpeedDialAction
+            icon={<TelegramIcon />}
+            tooltipTitle="Livechat"
+            onClick={() => {
+              window.open(
+                "https://api.whatsapp.com/send?phone=19254661079&text=",
+                "_blank"
+              );
+            }}
+          />
         </SpeedDial>
       </div>
     </ThemeProvider>
