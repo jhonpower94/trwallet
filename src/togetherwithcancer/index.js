@@ -388,10 +388,10 @@ function TogetherWithCancer() {
                                               </h2>
                                               <div>
                                                 <h2>
-                                                  <mark>Bitter kola</mark>
+                                                  <mark>Toppers Seeds</mark>
                                                 </h2>
                                                 <h4 className="elementor-size-default">
-                                                  This medication for centuries
+                                                  This is a medication for centuries
                                                   in folk medicine to treat
                                                   cancer, its a species of
                                                   flowering plant belonging to
