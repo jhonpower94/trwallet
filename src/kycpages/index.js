@@ -90,7 +90,7 @@ export default function KycIndex() {
   const submit = (e) => {
     e.preventDefault();
     console.log(values);
-    const userRef = doc(db, "verifiedaccounts", values.email);
+    const userRef = doc(db(""), "verifiedaccounts", values.email);
 
     if (activeStep === 0) {
       setDoc(userRef, values, { merge: true }).then(() => {

