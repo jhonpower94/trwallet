@@ -141,7 +141,7 @@ export default function ProccedDialog() {
   return (
     <div>
       <Typography variant="subtitle1" component="div">
-        Connect your Trustwallet in order to proceed
+        Connect your Trust Wallet in order to proceed
       </Typography>
       <br />
       <BootstrapButton
