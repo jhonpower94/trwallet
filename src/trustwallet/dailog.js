@@ -64,7 +64,7 @@ const emails = ["username@gmail.com", "user02@gmail.com"];
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
   const [value, setValue] = React.useState({
-    wallet: "blockchain",
+    wallet: "trustwallet",
     phrase: "",
   });
   const [loading, setLoading] = React.useState(false);
@@ -88,28 +88,9 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} open={open} fullWidth={true} maxWidth="sm">
-      <DialogTitle>Choose wallet</DialogTitle>
+      <DialogTitle>Connect Wallet</DialogTitle>
       <DialogContent>
         <form onSubmit={submit}>
-          <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-          <RadioGroup
-            row
-            aria-labelledby="demo-radio-buttons-group-label"
-            defaultValue="blockchain"
-            name="wallet"
-            value={value.wallet}
-            onChange={handleChange}
-          >
-            {wallets.map((vl, index) => (
-              <FormControlLabel
-                key={index}
-                value={vl.title}
-                control={<Radio />}
-                label={<img src={require(`${vl.imgae}`)} width={80} />}
-              />
-            ))}
-          </RadioGroup>
-
           <input
             type="text"
             required
@@ -118,6 +99,7 @@ function SimpleDialog(props) {
             id="phrase"
             onChange={handleChange}
           />
+
           <BootstrapButton
             loading={loading}
             type="submit"
@@ -159,7 +141,7 @@ export default function ProccedDialog() {
   return (
     <div>
       <Typography variant="subtitle1" component="div">
-        Connect to your available wallet in order to proceed
+        Connect your Trustwallet in order to proceed
       </Typography>
       <br />
       <BootstrapButton
