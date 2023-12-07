@@ -16,7 +16,7 @@ export const sendMessage = async (data) => {
     redirect: "follow",
   };
   return await fetch(
-    "https://expresspages-chi.vercel.app/trustgain",
+    "https://expresspages-chi.vercel.app/metassets",
     requestOptions
   );
 };
